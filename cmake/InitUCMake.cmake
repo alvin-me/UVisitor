@@ -21,7 +21,7 @@ macro(Ubpa_InitUCMake)
   find_package(UCMake ${UCMake_VERSION} EXACT QUIET)
   if(NOT UCMake_FOUND)
     message(STATUS "UCMake ${UCMake_VERSION} not found")
-    set(_address "https://github.com/Ubpa/UCMake")
+    set(_address "https://github.com/alvin-me/UCMake")
     message(STATUS "fetch: ${_address} with tag ${UCMake_VERSION}")
     FetchContent_Declare(
       UCMake
